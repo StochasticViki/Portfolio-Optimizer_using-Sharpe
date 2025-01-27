@@ -1,11 +1,11 @@
-# Portfolio Optimizer
+# Portfolio Optimizer (Indian Portfolio)
 
 ## Overview
-A Python-based portfolio optimization tool that helps investors find optimal stock portfolios using modern portfolio theory.
+A Python-based portfolio optimization tool that helps investors find optimal stock portfolios (consisting of indian securities) using modern portfolio theory.
 
 ## Features
-- Scrape risk-free rate from financial websites
-- Download historical stock price data
+- Scrape indian risk-free rate from investing.com
+- Download historical stock price data from YahooFinance
 - Generate random portfolio weights
 - Calculate portfolio metrics:
   - Expected return
@@ -31,19 +31,19 @@ pip install beautifulsoup4 requests yfinance numpy pandas tk
 ```
 
 ## Usage
-Run the main application:
+Run the main application (main.py):
 ```bash
 python src/main.py
 ```
 
-Enter stock tickers and number of iterations in the GUI.
+Enter stock tickers from YahooFinance's website and number of iterations/simulations (atleast 2000 is recommended) in the GUI.
 
 ## Example
-Input tickers: AAPL, MSFT, NVDA
-Iterations: 100
+Input tickers: RELIANCE.NS, ADANIPORTS.NS, JPPOWER.BO
+Iterations: 2000
 - Generates portfolios with different weights
 - Finds portfolio with maximum Sharpe ratio
-- Finds portfolio with minimum risk
+- Finds portfolio with minimum risk (Volatility/Standard Deviation)
 
 ## Contributing
 1. Fork repository
